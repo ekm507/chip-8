@@ -62,3 +62,29 @@ to `0xF`.
 now that we know how this machine workd, we can start emulating it.
 
 main loop (also aka. super loop) seems to be a good approach.
+
+## defining parts
+
+let's make classes for system parts.
+
+a class for CPU as well as a class for the BUS.  
+since RAM is only a storage, we can define it as an array  
+in BUS class.
+
+so let's define parts one by one.
+
+### BUS
+
+in this approach, BUS is the main base of the system.  
+it works like the mainboard on a computer and anything is connected to it.
+
+so BUS object has a CPU object and a RAM array. also other things  
+will be on BUS.
+
+### CPU
+
+CPU object starts by getting connecetd to the BUS.
+
+## Load the program
+
+loading the code is the first step in emulation process.
